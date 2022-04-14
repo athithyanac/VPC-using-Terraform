@@ -1,15 +1,15 @@
 ## Features
 
-Easy to customise and use.
-Each subnet CIDR block created through automation.
-Tfvars file to access and modify variables.
+* Easy to customise and use.
+* Each subnet CIDR block created through automation.
+* Tfvars file to access and modify variables.
 
 
 ## Prerequisites 
 
-Need AWS CLI access or IAM user access with policies attached for creating VPC.
-Terraform need to be installed.
-Knowledge of VPC and Subnetting.
+* Need AWS CLI access or IAM user access with policies attached for creating VPC.
+* Terraform need to be installed.
+* Knowledge of VPC and Subnetting.
 
 ## Creating VPC
 ```terraform
@@ -185,3 +185,4 @@ resource "aws_eip" "eip" {
     project = var.project
   }
 }
+```
