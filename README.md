@@ -2,8 +2,8 @@
 
 Easy to customise and use.
 Each subnet CIDR block created through automation.
-Using tfvars file to access and modify variables.
-Project name is appended to the resources that are creating.
+Tfvars file to access and modify variables.
+
 
 ## Prerequisites 
 
