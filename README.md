@@ -5,7 +5,8 @@ Each subnet CIDR block created through automation.
 Using tfvars file to access and modify variables.
 Project name is appended to the resources that are creating.
 
-## Prerequisites for this project
+## Prerequisites 
+
 Need AWS CLI access or IAM user access with policies attached for creating VPC.
 Terraform need to be installed.
 Knowledge of VPC and Subnetting.
