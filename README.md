@@ -8,9 +8,41 @@
 ## Prerequisites 
 
 * Need AWS CLI access or IAM user access with policies attached for creating VPC.
-* Terraform need to be installed.
+* Terraform need to be installed. To download click on [Terraform](https://www.terraform.io/downloads "Terraform").
 * Knowledge of VPC and Subnetting.
 
+## Provider.tf
+```terraform
+provider "aws" {
+  region     = var.region
+  access_key = var.access_key
+  secret_key = var.secret_key
+}
+```
+## Terraform.tfvars
+```terraform
+region        = "specify region"
+access_key    = "specify access key"
+secret_key    = "specify secret key"
+project       = "specify project name"
+vpc_cidr      = "specify vpc cidr block"
+instance_type = "specify instance type"
+ami           = "specify ami"
+```
+## Variable.tf
+```terraform
+variable "region" {}
+variable "access_key" {}
+variable "secret_key" {}
+variable "project" {}
+variable "vpc_cidr" {}
+variable "ami" {}
+variable "instance_type" {}
+variable "newbits"{
+    default = "3"
+}
+```
+## Main.tf
 ## Creating VPC
 ```terraform
 resource "aws_vpc" "vpc" {
