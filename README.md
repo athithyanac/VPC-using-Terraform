@@ -1,8 +1,8 @@
 ## Features
 
 * Easy to customise and use.
-* Each subnet CIDR block created through automation.
-* Tfvars file to access and modify variables.
+* Each CIDR subnet block created using cidrsubnet().
+* Tfvars file to modify variables.
 
 
 ## Prerequisites 
