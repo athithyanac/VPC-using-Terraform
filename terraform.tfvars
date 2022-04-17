@@ -1,0 +1,7 @@
+region        = "specify region"
+access_key    = "specify access key"
+secret_key    = "specify secret key"
+project       = "specify project name"
+vpc_cidr      = "specify vpc cidr bloc"
+instance_type = "specify instance typeo"
+ami           = "specify ami"
