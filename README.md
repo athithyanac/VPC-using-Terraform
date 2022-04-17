@@ -8,7 +8,7 @@
 ## Prerequisites 
 
 * Need AWS CLI access or IAM user access with policies attached for creating VPC.
-* Terraform need to be installed. To download click on [Terraform](https://www.terraform.io/downloads "Terraform").
+* Terraform need to be installed. Click to download [Terraform](https://www.terraform.io/downloads "Terraform").
 * Knowledge of VPC and Subnetting.
 
 ## Provider.tf
@@ -219,7 +219,7 @@ resource "aws_eip" "eip" {
 }
 ```
 ## Output.tf to get terraform output
-~~~terraform
+```terraform
 output "Public_Subnets" {
     value = [ aws_subnet.public1,aws_subnet.public2,aws_subnet.public3 ]
 }
@@ -249,12 +249,13 @@ output "aws_route_table_private" {
   value = aws_route_table.private_rtb.id
 }
 ```
+
 ## To validate terraform files
-~~~terrform 
+```terraform 
 terraform validate
 ```
 ## To plan architecture
-~~~terraform
+```terraform
 terraform plan
 ````
 ## To configure the architecture in AWS
