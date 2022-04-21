@@ -254,11 +254,11 @@ output "aws_route_table_private" {
 ```terraform 
 terraform validate
 ```
-## To plan architecture
+## To plan infra
 ```terraform
 terraform plan
 ````
-## To configure the architecture in AWS
+## To configure the infra in AWS
 ``` terraform
 terraform apply
 ```
